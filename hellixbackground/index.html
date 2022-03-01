@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light Parallax Effects | Vanilla Javascript</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <img src="./images/bg.jpg" alt="Image Error" id="bg">
+        <img src="./images/moon.png" alt="Image Error" id="moon">
+        <img src="./images/mountain.png" alt="Image Error" id="mountain">
+        <img src="./images/road.png" alt="Image Error" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5+ 'px' 
+            moon.style.left = -value * 0.5+ 'px' 
+            mountain.style.top = -value * 0.15+ 'px' 
+            road.style.top = value * 0.15+ 'px' 
+            text.style.top = value * 1 + 'px' 
+        })
+
+        </script>
+        <div>
+            <h3 id="heading">Parallax world</h3>
+        </div>
+    <div class="container">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id blanditiis perspiciatis, ipsum veniam ex, repellendus porro animi cum mollitia quos, exercitationem voluptates dignissimos magnam harum praesentium quasi ipsa eum consequatur cupiditate vel rerum. Totam, ad! Cupiditate nisi reiciendis a inventore? Omnis corrupti totam, vero incidunt ipsa a id illum est quaerat accusamus unde labore debitis reprehenderit quasi exercitationem alias ab nisi autem eveniet esse ad atque animi hic amet? Explicabo, adipisci,
+             sed vel accusamus amet aspernatur enim beatae eius incidunt obcaecati in expedita reprehenderit ab distinctio, accusantium facilis earum voluptatibus? Id soluta deleniti dicta nobis alias libero et voluptate, suscipit debitis eos porro corporis sapiente commodi ipsa? Recusandae omnis sapiente iste nemo modi officia voluptatibus fugit ea atque quibusdam esse reiciendis eveniet sunt, labore asperiores!</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae laudantium consectetur ipsa accusantium repellat quia sunt, dolorum illo vitae, mollitia corporis minus ipsam sequi temporibus aut repudiandae. Harum adipisci accusamus sunt dignissimos voluptates mollitia ex veritatis, deleniti libero iusto quo quia molestias consectetur pariatur cum facilis. Natus aut minus sit facere. Perferendis atque inventore vitae deleniti incidunt, nemo nulla perspiciatis soluta quia assumenda excepturi numquam porro, doloribus repellendus tenetur error asperiores earum. Rerum facere necessitatibus voluptates tenetur id quae reiciendis vero sunt cum dignissimos ipsa omnis praesentium rem quo earum nemo, culpa vitae? Quam expedita tempore reiciendis. Repudiandae velit fugiat ducimus distinctio doloremque error nulla rerum, provident corporis. Corrupti illo adipisci, voluptas quae repellendus nemo vitae provident odio porro non a cupiditate nisi, sapiente perspiciatis! At eum quos nobis mollitia earum sapiente, provident aperiam sint, modi quas culpa facere omnis sunt quae temporibus? Accusantium aliquam officiis iure a impedit.</p>
+    </div>
+</body>
+</html>

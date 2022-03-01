@@ -1,0 +1,36 @@
+.container {
+    text-align: center;
+    background: grey;
+    width: 450px;
+    margin: 0 auto;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+    border: 8px solid black;
+}
+
+table {
+    margin: 0 auto;
+}
+
+input {
+    font-size: 36px;
+    margin-bottom: 20px;
+    height: 58px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    width: 102px;
+    height: 65px;
+    background: #64a1b9;
+    color: grey;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: orange;
+}
